@@ -1,0 +1,32 @@
+$lg: 40px;
+
+%textTrans {
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: black;
+}
+
+@mixin h1($fs, $bc, $c) {
+    font-size: $fs;
+    background-color: $bc;
+    color: $c;
+}
+
+.anyTest {
+    background-color: lightcoral;
+    color: grey;
+
+    h3 {
+        // color: wheat;
+
+        @include h1(30px, lightblue, grey);
+
+        &:hover {
+            color: black;
+            font-size: $lg;
+            @extend %textTrans;
+        }
+    }
+}
