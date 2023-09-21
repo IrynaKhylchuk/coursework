@@ -16,11 +16,7 @@
   <body {% if bodyClass %}class="{{ bodyClass }}" {% endif %}>
     <div class="page-wrapper" id="pageWrapper">
       {% include "_html/_base/_includes/_header.html" %} 
-      {% include "_html/_base/_includes/_test.html" %} 
-
-      {% include
-      "_html/_base/_includes/_banner.html" %} {% block content %}{% endblock %}
-      {% include "_html/_base/_includes/_footer.html" %}
+      {% block content %}{% endblock %}
     </div>
 
     <script src="assets/js/app.min.js"></script>

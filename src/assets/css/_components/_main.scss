@@ -1,12 +1,1 @@
 @import "./header";
-@import "./footer";
-@import "./test";
-
-.blog{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-
-}
-header{
-    font-family: $base_font;
-}
