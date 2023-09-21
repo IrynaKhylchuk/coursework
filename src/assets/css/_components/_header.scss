@@ -4,7 +4,6 @@
     div {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 10px 0;
 
         ul {
@@ -15,16 +14,67 @@
             margin: 0;
             
             li {
-                padding: 0 20px;
+                margin: 0 20px;
 
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
                     color: white;
                     font-size: 12px;
-                    font-family: Poppins-Bold;
+                    font-family: Poppins-SemiBold;
+                    vertical-align: middle;
                 }
+                
+                &:nth-child(1):hover, &:nth-child(2):hover, &:nth-child(3):hover {
+                    text-decoration: underline;
+                    color: white;
+                }
+
+                &:nth-child(4) {
+                    background: url(../img/phone.png);
+                    height: 31px;
+                    width: 31px;
+                    background-repeat: no-repeat;
+                }
+                &:nth-child(4):hover{
+                    background: url(../img/phone-hover.png);
+                }
+
+            &:nth-child(5) {
+                padding: 5px 20px;
+                background-color: #0287c3;
+                border-radius: 3px;
+                margin-right: 10px;
             }
+
+            &:nth-child(5):hover {
+                background-color: #039ae0;
+            }
+            
+            &:nth-child(6) {
+                padding: 5px 20px;
+                background-color: #f75e2e;
+                border-radius: 3px;
+            }
+
+            &:nth-child(6):hover {
+                background-color: #fa9e82;
+            }
+
+            &:nth-child(7) {
+                background: url(../img/burger.png);
+                height: 17px;
+                width: 22px;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(7):hover{
+                background: url(../img/burger-hover.png);
+            }
+
+            }
+
         }
+        
+        
     }
 }
