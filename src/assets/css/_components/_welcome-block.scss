@@ -1,0 +1,25 @@
+.welcome {
+    padding: 100px 0;
+
+    .col-6 {
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        &:nth-child(2) {
+            span {
+                color: #0287c3;
+                font-size: 15px;
+                font-family: Poppins-Regular;
+            }
+
+            h1 {
+                padding: 20px 0;
+            }
+    }
+    }
+
+    
+}

@@ -22,7 +22,11 @@
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}" {% endif %}>
     <div class="page-wrapper" id="pageWrapper">
-      {% include "_html/_base/_includes/_header.html" %} {% block content %}{%
+      {% include "_html/_base/_includes/_header.html" %} 
+      {% include "_html/_base/_includes/_welcome-block.html" %} 
+      {% include "_html/_base/_includes/_advantages.html" %} 
+      {% include "_html/_base/_includes/_how-it-works.html" %} 
+      {% block content %}{%
       endblock %}
     </div>
 
