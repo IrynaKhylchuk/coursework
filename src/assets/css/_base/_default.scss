@@ -76,11 +76,19 @@ p {
 }
 
 .btn-orange {
-
+    display: inline-block;
+    color: white;
+    background-color: #f75e2e;
+    font-size: 14px;
+    font-family: Poppins-SemiBold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
 }
 
 .btn-orange:hover {
-
+    background-color: #fa9e82;
+    color: white;
 }
 
 $main-color-1: #03a9f4;
