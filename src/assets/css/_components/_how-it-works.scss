@@ -1,0 +1,43 @@
+.how-it-works {
+    padding: 80px;
+    text-align: center;
+
+    .row {
+        .col {
+            span {
+                display: inline-block;
+                margin: 12.5px 0;
+            }
+
+            h2 {
+                margin: 12.5px 0;
+            }
+
+            h5 {
+                text-transform: uppercase;
+                margin: 20px 0;
+            }
+        }
+
+        &:nth-child(3) {
+            margin: 50px 0;
+
+            .col {
+                padding: 0 30px;
+                position: relative;
+
+                &:not(:last-child){
+                    &::after {
+                        content: "";
+                        height: 180px;
+                        width: 16px;
+                        background: url(../img/arrow_ourSimple.png);
+                        position: absolute;
+                        top: 0;
+                        right: -15px;
+                    }  
+                }
+            }
+        }
+    }
+}

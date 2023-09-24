@@ -12,15 +12,22 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body {% if bodyClass %}class="{{ bodyClass }}" {% endif %}>
     <div class="page-wrapper" id="pageWrapper">
       {% include "_html/_base/_includes/_header.html" %} 
-      {% include "_html/_base/_includes/_test.html" %} 
-
-      {% include
-      "_html/_base/_includes/_banner.html" %} {% block content %}{% endblock %}
-      {% include "_html/_base/_includes/_footer.html" %}
+      {% include "_html/_base/_includes/_welcome-block.html" %} 
+      {% include "_html/_base/_includes/_advantages.html" %} 
+      {% include "_html/_base/_includes/_how-it-works.html" %} 
+      {% block content %}{%
+      endblock %}
     </div>
 
     <script src="assets/js/app.min.js"></script>

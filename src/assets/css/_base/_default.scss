@@ -1,3 +1,12 @@
+ul, ol, h1, h2, h3, h4, h5, h6, p, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
 h1 {
     font-size: 35px;
     font-family: Poppins-Bold;
@@ -40,8 +49,46 @@ p {
     color: #51555a;
 }
 
-ul li {
-    font-size: 15pt;
-    font-family: Poppins-Medium;
-    color: #51555a;
+.span-blue {
+    color: #0287c3;
+    font-size: 15px;
+    font-family: Poppins-Regular;
 }
+
+.span-white {
+    color: white;
+    font-size: 15px;
+    font-family: Poppins-Regular;
+}
+
+.btn-blue {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Poppins-Medium;
+    background-color: #0287c3;
+}
+
+.btn-blue:hover {
+    background-color: #c0e9fc;
+    color: #0287c3;
+}
+
+.btn-orange {
+    display: inline-block;
+    color: white;
+    background-color: #f75e2e;
+    font-size: 14px;
+    font-family: Poppins-SemiBold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.btn-orange:hover {
+    background-color: #fa9e82;
+    color: white;
+}
+
+$main-color-1: #03a9f4;
