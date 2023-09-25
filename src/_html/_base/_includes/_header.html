@@ -1,6 +1,6 @@
 <div class="container-fluid topnav-bg">
   <div class="container">
-    <div class="logo">
+    <div>
       <a href="#"><img src="../../../assets/img/logo.png" alt="logo" /></a>
     </div>
 
@@ -81,9 +81,12 @@
             </select>
           </div>
           <div>
-            <label for="button"></label>
-            <button type="button"><i class="fa-solid fa-minus"></i></button
-            ><input type="text" placeholder="2" /><button type="button">
+            <label for="button">Number of pages</label> <br>
+            <button type="button" id="btnMinus">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="text" id="txtNumberOfPages" value="1" />
+            <button type="button" id="btnPlus">
               <i class="fa-solid fa-plus"></i>
             </button>
           </div>

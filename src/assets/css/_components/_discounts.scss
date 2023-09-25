@@ -10,31 +10,26 @@
         padding: 50px 0 350px;
         position: relative;
 
-        .row {
-            .col {
-                span {
-                    color: white;
-                }
-
-                h2 {
-                    margin: 40px 0;
-                    color: white;
-                }
+        div {
+            h2 {
+                margin: 40px 0;
+                color: white;
+            }
                 
-                .subtitle {
-                    padding:  0 150px;
-                    margin-bottom: 80px;
-                }
+            .subtitle {
+                padding:  0 150px;
+                margin-bottom: 80px;
             }
         }
     }
 }
 
+
 .discount-block {
     position: absolute;
     background-color: white;
     width: 100%;
-    box-shadow: 0 5px 20px #ededed;
+    box-shadow: 0px 15px 20px -10px #afafaf;
 
     .col-7 {
         padding: 35px 60px;
