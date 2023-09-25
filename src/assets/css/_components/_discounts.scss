@@ -1,0 +1,144 @@
+.discounts {
+    background-color: $main-color-1;
+    background-image: url(../img/04-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    .container {
+        padding: 50px 0 350px;
+        position: relative;
+
+        div {
+            h2 {
+                margin: 40px 0;
+                color: white;
+            }
+                
+            .subtitle {
+                padding:  0 150px;
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+
+.discount-block {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 15px 20px -10px #afafaf;
+
+    .col-7 {
+        padding: 35px 60px;
+
+        .row {
+            &:first-child {
+                border-bottom: 1px solid #e1e1e7;
+            }
+            
+            .col-6 {
+                padding: 0;
+
+                &:nth-child(1) {
+                    border-right: 1px solid #e1e1e7;
+                }
+
+                .block {
+                    padding: 35px 0;
+
+                    h1 {
+                        color: #f75e2e;
+                        text-transform: uppercase;
+                    }
+
+                    h5 {
+                        font-family: Poppins-SemiBold;
+                        color: #0287c3;
+                    }
+                }
+            }   
+        }
+    }
+
+    .col-5 {
+        background-color: $main-color-1;
+        padding: 20px;
+
+        &>div {
+            border: 3px dashed #0287c3;
+            border-radius: 30px;
+            padding: 30px;
+
+            &>img {
+                position: absolute;
+                bottom: 20px;
+                right: -25px;
+            }
+
+            p {
+                font-size: 24pt;
+                color: white;
+                text-transform: uppercase;
+                font-family: Poppins-SemiBold;
+                line-height: 40px;
+            }
+
+            .inside-block {
+                position: relative;
+                background-color: #0287c3;
+                border-radius: 30px;
+                border: 3px dashed white;
+                padding: 30px 55px;
+                margin: 40px 0 50px;
+
+                img {
+                    position: absolute;
+
+                    &:nth-child(1) {
+                        top: -10px;
+                        right: -10px;
+                    }
+
+                    &:nth-child(2) {
+                        top: -14px;
+                        left: -5px;
+                    }
+                }
+
+                span {
+                    display: block;
+
+                    &:nth-child(3) {
+                        font-size: 24pt;
+                        font-family: Poppins-Medium;
+                        color: white;
+                        text-align: left;
+                    }
+
+                    &:nth-child(4) {
+                        color: #e2f55d;
+                        font-family: Poppins-Bold;
+                        font-size: 57pt;
+                        line-height: 65px;
+                        text-transform: uppercase;
+                    }
+
+                    &:nth-child(5) {
+                        color: white;
+                        font-size: 14pt;
+                        font-family: Poppins-Medium;
+                    }
+                }
+            }
+
+            &>span {
+                font-family: OpenSans-Italic;
+                color: white;
+                font-size: 18pt;
+            }
+        }
+    }
+}

@@ -49,15 +49,21 @@ p {
     color: #51555a;
 }
 
+.subtitle {
+    color: #ffffff;
+    font-size: 20pt;
+    font-family: Poppins-Medium;
+}
+
 .span-blue {
     color: #0287c3;
-    font-size: 15px;
+    font-size: 15pt;
     font-family: Poppins-Regular;
 }
 
 .span-white {
     color: white;
-    font-size: 15px;
+    font-size: 15pt;
     font-family: Poppins-Regular;
 }
 
@@ -65,9 +71,10 @@ p {
     display: inline-block;
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 14pt;
     font-family: Poppins-Medium;
     background-color: #0287c3;
+    border-radius: 3px;
 }
 
 .btn-blue:hover {
@@ -79,7 +86,7 @@ p {
     display: inline-block;
     color: white;
     background-color: #f75e2e;
-    font-size: 14px;
+    font-size: 14pt;
     font-family: Poppins-SemiBold;
     text-decoration: none;
     text-transform: uppercase;

@@ -1,0 +1,163 @@
+.footer {
+    background-color: $main-color-1;
+
+    .foot-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        .nav {
+            ul{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+                    margin-left: 20px;
+
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+    
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: white;
+                        font-size: 12pt;
+                        font-family: Poppins-Medium;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 5px 0;
+        color: #81d4fa;
+    }
+
+    .foot-links {
+        padding: 40px 0 55px;
+        
+        h5 {
+            font-size: 16pt;
+            color: white;
+            padding: 25px 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            line-height: 30px; 
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .foot-info {
+        padding: 40px 0;
+
+        .row {
+            .col {
+                &:nth-child(1), 
+                &:nth-child(3), 
+                &:nth-child(4) {
+                    
+                    span {
+                        color: white;
+                        font-family: Poppins-Regular;
+                        font-size: 11pt;
+                    }
+                }
+
+                &:nth-child(3), 
+                &:nth-child(4) {
+
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 20px;
+                    }
+                }
+
+                span.cellphone {
+                    font-size: 13pt;
+                    font-weight: bold;
+                }
+            }
+
+            .img {
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin: 0 5px;
+
+                    &:nth-child(1){
+                        div{
+                            background-image: url(../img/facebook.png);
+                            width: 35px;
+                            height: 35px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background-image: url(../img/facebook-hover.png);
+                            }
+                        }
+                    }
+
+                    &:nth-child(2){
+                        div{
+                            background-image: url(../img/twitter.png);
+                            width: 35px;
+                            height: 35px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+
+                            &:hover {
+                                background-image: url(../img/twitter-hover.png);
+                            }
+                        }
+                    }
+
+                    &:nth-child(3){
+                        div{
+                            background-image: url(../img/pinterest.png);
+                            width: 35px;
+                            height: 35px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            
+                            &:hover {
+                                background-image: url(../img/pinterest-hover.png);
+                            }
+                        }
+                    }
+
+                    &:nth-child(4){
+                        div{
+                            background-image: url(../img/google-plus.png);
+                            width: 35px;
+                            height: 35px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+
+                            
+                            &:hover {
+                                background-image: url(../img/google-plus-hover.png);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -14,17 +14,59 @@
             margin: 0;
             
             li {
-                margin: 0 20px;
+                display: inline-block;
+                position: relative;
+                margin-left: 20px;
+                    
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
 
                 a {
                     text-decoration: none;
                     text-transform: uppercase;
                     color: white;
-                    font-size: 12px;
+                    font-size: 12pt;
                     font-family: Poppins-SemiBold;
-                    vertical-align: middle;
                 }
-                
+
+                &:nth-child(1), &:nth-child(2) {
+                    .dropdown {
+                        display: none;
+                        position: absolute;
+                        z-index: 10;
+                        left: -10px;
+                        min-width: 100%;
+                        width: 115px;
+                        background-color: white;
+                        border: 1px solid #d8dadb;
+                        border-radius: 3px;
+
+                        li {
+                            display: block;
+                            margin: 0;
+                            padding: 10px;
+
+                            a {
+                                color: #656a70;
+                                font-size: 14pt;
+                                font-family: Poppins-Regular;
+                                text-transform: none;
+                            }
+
+                            &:hover {
+                                background-color: #e6f7fe;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        ul {
+                            display: block;
+                        }
+                    }
+                }
+
                 &:nth-child(1):hover, &:nth-child(2):hover, &:nth-child(3):hover {
                     text-decoration: underline;
                     color: white;
@@ -45,7 +87,6 @@
                 &:nth-child(5) {
                     a {
                         padding: 8px 20px;
-                        border-radius: 3px;
                     }
                 }
             
@@ -72,6 +113,7 @@
         }
                 
     }
+
 }
 
 .banner-bg {
@@ -119,7 +161,7 @@
 
         p {
             margin: 20px 0;
-            font-size: 20px;
+            font-size: 20pt;
         }
 
         a {
@@ -144,35 +186,38 @@
         background-color: $main-color-1;
         color: white;
         padding: 35px;
-        width: 100%;
-        left: 0;
+        width: 1400px;
+        left: -40px;
 
         form {
-
-            div {
-                display: inline-block;
-
-                &:not(:last-child) {
-                padding-right: 35px;
-                }
+            &>div {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
 
                 label {
                     font-family: Poppins-Medium;
-                    font-size: 14px;
+                    font-size: 14pt;
                     margin-bottom: 10px;
                 }
 
                 select {
-                    font-size: 13px;
+                    font-size: 13pt;
                     font-family: Poppins-Regular;
                     border: 1px solid #d8dadb;
+                    border-radius: 3px;
+                    background-color: #f6f9f9;
                     color: #656a70;
-                    width: 215px;
+                    width: 220px;
                     padding: 12px 18px;
                     cursor: pointer;
 
+                    &:focus {
+                        outline: none;
+                    }
+
                     option {
-                        font-size: 13px;
+                        font-size: 13pt;
                         font-family: Poppins-Regular;
                         color: #656a70;
                         width: 215px;
@@ -180,31 +225,35 @@
                     }
                 }
 
-                &:nth-child(4) {
-                    input {
-                        margin: 0;
-                        padding: 0;
-                        height: 54px;
-                        width: 108px;
-                        padding: 12px 18px;
-                        border: 1px solid #d8dadb;
-                        color: #656a70;
-                        text-align: center;
-                    }
+                button {
+                    height: 55.5px;
+                    width: 55.5px;
+                    border: 1px solid #d4d6d7;
+                    border-radius: 3px;
+                    background-color: white;
+                    color: #656a70;
+                    padding: 0;
+                    position: relative;
+                    top: 1px;
+                }
 
-                    button {
-                        margin: 0;
-                        width: 54px;
-                        height: 54px;
-                        border: 1px solid #d8dadb;
-                        color: #656a70;
-                        background-color: white;
-                    }
+                input[type=text] {
+                    width: 110px;
+                    height: 55.5px;
+                    background-color: #f6f9f9;
+                    border: 1px solid #d4d6d7;
+                    text-align: center;
+                    font-family: Poppins-Regular;
+                    font-size: 13pt;
+                    color: #656a70;
+                    padding: 0;
+                    margin: 0 -5px;
+                    outline: none;
                 }
 
                 a {
-                    padding: 16px 76px;
-                    border-radius: 3px;
+                    width: 220px;
+                    padding: 16px 66px;
                 }
             }
         }

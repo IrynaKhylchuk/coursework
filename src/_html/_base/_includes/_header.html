@@ -1,6 +1,6 @@
 <div class="container-fluid topnav-bg">
   <div class="container">
-    <div class="logo">
+    <div>
       <a href="#"><img src="../../../assets/img/logo.png" alt="logo" /></a>
     </div>
 
@@ -8,9 +8,19 @@
       <ul>
         <li>
           <a href="#">services <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
         </li>
         <li>
           <a href="#">about us <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
         </li>
         <li><a href="#">how it works</a></li>
         <li>
@@ -71,9 +81,12 @@
             </select>
           </div>
           <div>
-            <label for="button"></label>
-            <button type="button"><i class="fa-solid fa-minus"></i></button
-            ><input type="text" placeholder="2" /><button type="button">
+            <label for="button">Number of pages</label> <br>
+            <button type="button" id="btnMinus">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="text" id="txtNumberOfPages" value="1" />
+            <button type="button" id="btnPlus">
               <i class="fa-solid fa-plus"></i>
             </button>
           </div>
