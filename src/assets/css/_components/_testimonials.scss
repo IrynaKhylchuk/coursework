@@ -1,4 +1,52 @@
 .testimonials {
-    padding: 260px 0 0;
+    padding: 200px 0 0;
     text-align: center;
+
+    .container {
+        padding: 50px 0 70px;
+        position: relative;
+
+        span {
+            &:nth-child(1){
+            padding: 30px 0 15px;
+            }
+        }
+
+        h2 {
+            padding: 15px 0 ;
+        }
+
+        img {
+            padding: 30px 0;
+        }
+
+        p {
+            padding: 0 175px;
+        }
+
+        h5 {
+            padding: 15px 0 0;
+            color: #0287c3;
+            font-family: Poppins-SemiBold;
+            font-size: 17pt;
+        }
+
+        &:last-child {
+        color: #a3a6a9;
+        font-size: 13pt;
+        font-family: Poppins-Light;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 40%;
+            left: -10%;
+        }
+
+        .arrow-right {
+            position: absolute;
+            top: 40%;
+            right: -10%;
+        }
+    }
 }
