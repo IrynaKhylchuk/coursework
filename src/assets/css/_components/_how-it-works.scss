@@ -3,12 +3,12 @@
     text-align: center;
 
     .row {
-        .col {
-            span {
-                display: inline-block;
-                margin: 12.5px 0;
-            }
+        span {
+            display: inline-block;
+            margin: 12.5px 0 20px;
+        }
 
+        .col-lg-3 {
             h2 {
                 margin: 12.5px 0;
             }
@@ -22,11 +22,11 @@
         &:nth-child(3) {
             margin: 50px 0 0;
 
-            .col {
+            .col-lg-3 {
                 padding: 0 30px;
                 position: relative;
 
-                &:not(:last-child){
+                &:not(:last-child) {
                     &::after {
                         content: "";
                         height: 180px;
@@ -35,6 +35,10 @@
                         position: absolute;
                         top: 0;
                         right: -15px;
+
+                        @media screen and (max-width:992px) {
+                            display: none;
+                        }
                     }  
                 }
             }

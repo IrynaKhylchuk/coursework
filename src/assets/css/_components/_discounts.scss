@@ -19,6 +19,10 @@
             .subtitle {
                 padding:  0 150px;
                 margin-bottom: 80px;
+            
+                @media screen and (max-width:1200px) {
+                    padding: 0 50px;
+                }
             }
         }
     }
@@ -26,12 +30,14 @@
 
 
 .discount-block {
+    left: 12px;
     position: absolute;
     background-color: white;
     width: 100%;
     box-shadow: 0px 15px 20px -10px #afafaf;
 
-    .col-7 {
+
+    .col-lg-7 {
         padding: 35px 60px;
 
         .row {
@@ -63,7 +69,7 @@
         }
     }
 
-    .col-5 {
+    .col-lg-5 {
         background-color: $main-color-1;
         padding: 20px;
 
@@ -76,6 +82,11 @@
                 position: absolute;
                 bottom: 20px;
                 right: -25px;
+
+                @media screen and (max-width:1200px) {
+                    right: -60px;
+                    bottom: 40px;
+                }
             }
 
             p {
@@ -139,6 +150,30 @@
                 color: white;
                 font-size: 18pt;
             }
+        }
+    }
+
+    .col-12 {
+
+        div {
+            display: flex;
+            align-items: center;
+            padding: 30px 30px 0;
+
+            h1, p {
+                padding: 0 10px 0 0;
+            }
+
+            h1 {
+                color: #f75e2e;
+                text-transform: uppercase;
+            }
+
+            h5 {
+                font-family: Poppins-SemiBold;
+                color: #0287c3;
+            }
+
         }
     }
 }

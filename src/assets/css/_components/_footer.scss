@@ -22,7 +22,21 @@
                     &:not(:last-child) {
                         margin-right: 20px;
                     }
-    
+
+                    &:nth-child(8) {
+                        background: url(../img/burger.png);
+                        height: 17px;
+                        width: 22px;
+                        background-repeat: no-repeat;
+                        display: none;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        &:nth-child(8) {
+                            display: block;
+                        }
+                    }
+
                     a {
                         text-decoration: none;
                         text-transform: uppercase;
@@ -30,12 +44,35 @@
                         font-size: 12pt;
                         font-family: Poppins-Medium;
                     }
+
+                    @media screen and (max-width:1200px) {
+                        &:nth-child(6), 
+                        &:nth-child(7) {
+                            display: none;
+                        }
+                    }
+
+                    @media screen and (max-width:992px) {
+                        &:nth-child(4), 
+                        &:nth-child(5) {
+                            display: none;
+                        }
+                    }
+
+                    @media screen and (max-width:768px) {
+                        &:nth-child(1), 
+                        &:nth-child(2), 
+                        &:nth-child(3) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
     }
 
     hr {
+        border: 1px solid #81d4fa;
         margin: 5px 0;
         color: #81d4fa;
     }
@@ -64,7 +101,9 @@
         padding: 40px 0;
 
         .row {
-            .col {
+            .col-sm-12 {
+                padding: 10px 0;
+
                 &:nth-child(1), 
                 &:nth-child(3), 
                 &:nth-child(4) {
@@ -100,8 +139,8 @@
                 a {
                     margin: 0 5px;
 
-                    &:nth-child(1){
-                        div{
+                    &:nth-child(1) {
+                        div {
                             background-image: url(../img/facebook.png);
                             width: 35px;
                             height: 35px;
@@ -114,8 +153,8 @@
                         }
                     }
 
-                    &:nth-child(2){
-                        div{
+                    &:nth-child(2) {
+                        div {
                             background-image: url(../img/twitter.png);
                             width: 35px;
                             height: 35px;
@@ -128,8 +167,8 @@
                         }
                     }
 
-                    &:nth-child(3){
-                        div{
+                    &:nth-child(3) {
+                        div {
                             background-image: url(../img/pinterest.png);
                             width: 35px;
                             height: 35px;
@@ -142,8 +181,8 @@
                         }
                     }
 
-                    &:nth-child(4){
-                        div{
+                    &:nth-child(4) {
+                        div {
                             background-image: url(../img/google-plus.png);
                             width: 35px;
                             height: 35px;
