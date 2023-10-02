@@ -6,6 +6,10 @@
     background-size: cover;
     text-align: center;
 
+    @media screen and (max-width:992px) {
+        height: 1200px;
+    }
+
     .container {
         padding: 50px 0 350px;
         position: relative;
@@ -35,7 +39,6 @@
     background-color: white;
     width: 100%;
     box-shadow: 0px 15px 20px -10px #afafaf;
-
 
     .col-lg-7 {
         padding: 35px 60px;
@@ -83,9 +86,9 @@
                 bottom: 20px;
                 right: -25px;
 
-                @media screen and (max-width:1200px) {
-                    right: -60px;
-                    bottom: 40px;
+                @media screen and (min-width:992px) and (max-width:1200px) {
+                    right: -20px;
+                    bottom: -60px;
                 }
             }
 
@@ -150,30 +153,6 @@
                 color: white;
                 font-size: 18pt;
             }
-        }
-    }
-
-    .col-12 {
-
-        div {
-            display: flex;
-            align-items: center;
-            padding: 30px 30px 0;
-
-            h1, p {
-                padding: 0 10px 0 0;
-            }
-
-            h1 {
-                color: #f75e2e;
-                text-transform: uppercase;
-            }
-
-            h5 {
-                font-family: Poppins-SemiBold;
-                color: #0287c3;
-            }
-
         }
     }
 }

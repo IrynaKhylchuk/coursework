@@ -1,14 +1,17 @@
 .testimonials {
-    padding: 200px 0 0;
     text-align: center;
 
-    @media screen and (max-width:1200px) {
-        padding: 270px 0 0;
-    }
-
     .container {
-        padding: 50px 0 70px;
+        padding: 250px 0 70px;
         position: relative;
+
+        @media screen and (max-width:1200px) {
+            padding: 350px 0 70px;
+        }
+
+        @media screen and (max-width:992px) {
+            padding: 370px 0 70px;
+        }
 
         span {
             &:nth-child(1){
@@ -47,7 +50,7 @@
 
         .arrow {
             position: absolute;
-            top: 40%;
+            top: 55%;
             left: -100px;
 
             @media screen and (max-width:1518px) {
@@ -57,7 +60,7 @@
 
         .arrow-right {
             position: absolute;
-            top: 40%;
+            top: 55%;
             right: -100px;
 
             @media screen and (max-width:1518px) {
