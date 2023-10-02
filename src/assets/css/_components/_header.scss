@@ -152,13 +152,33 @@
     background-size: cover;
     background-position: center center;
 
+    @media screen and (max-width:991px) {
+        height: 1000px;
+        margin-bottom: 180px;
+    }
+
+    @media screen and (max-width:505px) {
+        height: 1000px;
+        margin-bottom: 250px;
+    }
+    
+    @media screen and (max-width:450px) {
+        height: 800px;
+    }
+
+
     .container {
         padding: 100px 0;
         position: relative;
+
+        @media screen and (max-width:500px) {
+            padding: 0;
+        }
+
     }
 
     .col-xxl-8 {
-        padding: 50px 0;
+        padding: 50px 12px;
 
         h1 {
             font-family: Poppins-Bold;
@@ -171,7 +191,6 @@
             &:nth-child(2) {
                 color: #323538;
             }
-
         }
 
         span {
@@ -212,7 +231,6 @@
                 font-size: 10px;
             }
         }
-
     }
 
     .col-xxl-4 {
@@ -224,7 +242,6 @@
             right: 60px;
             z-index: 1;   
         }
-        
     }
 
     .section {
@@ -232,10 +249,7 @@
         background-color: $main-color-1;
         color: white;
         padding: 35px;
-
-        @media screen and (max-width:1399px) {
-            display: none;
-        }
+        width: 100%;
 
         form {
             div {
@@ -244,6 +258,10 @@
                     font-family: Poppins-Medium;
                     font-size: 14pt;
                     margin-bottom: 10px;
+
+                    @media screen and (min-width:992px) and (max-width:1200px) {
+                        font-size: 13pt;
+                    }
                 }
 
                 select {
@@ -253,8 +271,9 @@
                     border-radius: 3px;
                     background-color: #f6f9f9;
                     color: #656a70;
-                    width: 220px;
+                    width: 100%;
                     padding: 12px 18px;
+                    border-right: 16px solid transparent;
                     cursor: pointer;
                     
                     &:focus {
@@ -265,26 +284,24 @@
                         font-size: 13pt;
                         font-family: Poppins-Regular;
                         color: #656a70;
-                        width: 215px;
+                        width: 100%;
                         padding: 12px 18px;
                     }
                 }
 
                 button {
-                    height: 55.5px;
-                    width: 55.5px;
+                    height: 56px;
+                    width: 33.3%;
                     border: 1px solid #d4d6d7;
                     border-radius: 3px;
                     background-color: white;
                     color: #656a70;
                     padding: 0;
-                    position: relative;
-                    top: 1px;
                 }
 
                 input[type=text] {
-                    width: 110px;
-                    height: 55.5px;
+                    width: 33.3%;
+                    height: 56px;
                     background-color: #f6f9f9;
                     border: 1px solid #d4d6d7;
                     text-align: center;
@@ -294,16 +311,19 @@
                     padding: 0;
                     margin: 0 -5px;
                     outline: none;
+                    vertical-align: bottom;
                 }
                 
                 a {
-                    width: 220px;
-                    padding: 16px 66px;
-                    position: relative;
-                    bottom: -34px;
+                    max-width: 100%;
+                    height: 56px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 37px;
                 }
             }
         }
     }
 }
-
