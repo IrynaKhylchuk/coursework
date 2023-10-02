@@ -11,7 +11,7 @@
                 display: none;
             }
 
-            @media screen and (max-width:492px){
+            @media screen and (max-width:767px){
                 .logo-sm {
                     display: inline-block;
                 } 
@@ -22,13 +22,12 @@
             }
         }
         
-
         ul {
             display: flex;
             align-items: center;
             list-style: none;
-            padding: 0;
             margin: 0;
+            padding: 0;
             
             li {
                 display: inline-block;
@@ -53,7 +52,6 @@
                         position: absolute;
                         z-index: 10;
                         left: -10px;
-                        min-width: 100%;
                         width: 115px;
                         background-color: white;
                         border: 1px solid #d8dadb;
@@ -82,11 +80,6 @@
                             display: block;
                         }
                     }
-                }
-
-                &:nth-child(1):hover, &:nth-child(2):hover, &:nth-child(3):hover {
-                    text-decoration: underline;
-                    color: white;
                 }
 
                 &:nth-child(4) {
@@ -125,24 +118,20 @@
                     cursor: pointer;
                 }
 
-                @media screen and (max-width:1200px) {
+                @media screen and (max-width:1199px) {
                     &:nth-child(4), &:nth-child(6) {
                         display: none;
                     }
                 }
 
-                @media screen and (max-width:992px) {
+                @media screen and (max-width:991px) {
                     &:nth-child(1), &:nth-child(2), &:nth-child(3){
                         display: none;
                     }
                 }
-
             }
-
         }
-                
     }
-
 }
 
 .banner-bg {
@@ -151,33 +140,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    height: 700px;
 
-    @media screen and (max-width:991px) {
-        height: 1000px;
-        margin-bottom: 180px;
-    }
-
-    @media screen and (max-width:505px) {
-        height: 1000px;
-        margin-bottom: 250px;
-    }
-    
-    @media screen and (max-width:450px) {
+    @media screen and (max-width:1399px) {
         height: 800px;
     }
 
+    @media screen and (max-width:991px) {
+        height: 1000px;
+    }
+
+    @media screen and (max-width:767px) {
+        height: 700px;
+    }
 
     .container {
-        padding: 100px 0;
+        padding: 100px 0 0;
         position: relative;
 
-        @media screen and (max-width:500px) {
+        @media screen and (max-width:767px) {
             padding: 0;
         }
 
     }
 
-    .col-xxl-8 {
+    .col-lg-8 {
         padding: 50px 12px;
 
         h1 {
@@ -218,7 +205,7 @@
             margin: 10px 0;
         }
 
-        @media screen and (max-width:450px) {
+        @media screen and (max-width:767px) {
             h1 {
                 font-size: 30px;
             }
@@ -227,25 +214,30 @@
                 font-size: 15px;
             }
 
-            span {
-                font-size: 10px;
+            a{
+                padding: 10px 30px;
+                font-size: 15px;
             }
         }
     }
 
-    .col-xxl-4 {
-        padding: 0;
+    .col-lg-4 {
 
         img {
             position: absolute;
-            bottom: 85px;
+            top: 175px;
             right: 60px;
-            z-index: 1;   
+            z-index: 1;  
+            
+            @media screen and (max-width:1399px) {
+                top: 270px;
+            }
         }
     }
 
     .section {
-        position: absolute;
+        position: relative;
+        top: 30px;
         background-color: $main-color-1;
         color: white;
         padding: 35px;
@@ -253,75 +245,81 @@
 
         form {
             div {
-                
-                label {
-                    font-family: Poppins-Medium;
-                    font-size: 14pt;
-                    margin-bottom: 10px;
-
-                    @media screen and (min-width:992px) and (max-width:1200px) {
-                        font-size: 13pt;
+                div{
+                    @media screen and (max-width:991px) {
+                        &:not(:last-child){
+                            margin-bottom: 15px;
                     }
                 }
 
-                select {
-                    font-size: 13pt;
-                    font-family: Poppins-Regular;
-                    border: 1px solid #d8dadb;
-                    border-radius: 3px;
-                    background-color: #f6f9f9;
-                    color: #656a70;
-                    width: 100%;
-                    padding: 12px 18px;
-                    border-right: 16px solid transparent;
-                    cursor: pointer;
-                    
-                    &:focus {
-                        outline: none;
+                    label {
+                        font-family: Poppins-Medium;
+                        font-size: 14pt;
+                        margin-bottom: 10px;
+
+                        @media screen and (min-width:991px) and (max-width:1200px) {
+                            font-size: 13pt;
+                        }
                     }
 
-                    option {
+                    select {
                         font-size: 13pt;
                         font-family: Poppins-Regular;
+                        border: 1px solid #d8dadb;
+                        border-radius: 3px;
+                        background-color: #f6f9f9;
                         color: #656a70;
                         width: 100%;
                         padding: 12px 18px;
+                        border-right: 16px solid transparent;
+                        cursor: pointer;
+                        
+                        &:focus {
+                            outline: none;
+                        }
+
+                        option {
+                            font-size: 13pt;
+                            font-family: Poppins-Regular;
+                            color: #656a70;
+                            width: 100%;
+                            padding: 12px 18px;
+                        }
                     }
-                }
 
-                button {
-                    height: 56px;
-                    width: 33.3%;
-                    border: 1px solid #d4d6d7;
-                    border-radius: 3px;
-                    background-color: white;
-                    color: #656a70;
-                    padding: 0;
-                }
+                    button {
+                        height: 56px;
+                        width: 33.3%;
+                        border: 1px solid #d4d6d7;
+                        border-radius: 3px;
+                        background-color: white;
+                        color: #656a70;
+                        padding: 0;
+                    }
 
-                input[type=text] {
-                    width: 33.3%;
-                    height: 56px;
-                    background-color: #f6f9f9;
-                    border: 1px solid #d4d6d7;
-                    text-align: center;
-                    font-family: Poppins-Regular;
-                    font-size: 13pt;
-                    color: #656a70;
-                    padding: 0;
-                    margin: 0 -5px;
-                    outline: none;
-                    vertical-align: bottom;
-                }
-                
-                a {
-                    max-width: 100%;
-                    height: 56px;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 37px;
+                    input[type=text] {
+                        width: 33.3%;
+                        height: 56px;
+                        background-color: #f6f9f9;
+                        border: 1px solid #d4d6d7;
+                        text-align: center;
+                        font-family: Poppins-Regular;
+                        font-size: 13pt;
+                        color: #656a70;
+                        padding: 0;
+                        margin: 0 -5px;
+                        outline: none;
+                        vertical-align: bottom;
+                    }
+                    
+                    a {
+                        height: 56px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 37px;
+                    }
                 }
             }
         }

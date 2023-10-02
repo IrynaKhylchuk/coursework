@@ -2,17 +2,17 @@
     padding: 80px;
     text-align: center;
 
+    span {
+        display: inline-block;
+        margin: 12.5px 0 20px;
+    }
+    
+    h2 {
+        margin: 12.5px 0;
+    }
+
     .row {
-        span {
-            display: inline-block;
-            margin: 12.5px 0 20px;
-        }
-
         .col-lg-3 {
-            h2 {
-                margin: 12.5px 0;
-            }
-
             h5 {
                 text-transform: uppercase;
                 margin: 20px 0;
@@ -42,6 +42,26 @@
                     }  
                 }
             }
+        }
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 40px 0;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        span {
+            font-size: 12px;
         }
     }
 }

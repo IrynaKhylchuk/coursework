@@ -1,5 +1,17 @@
 .welcome {
-    padding: 100px 0;
+    padding: 120px 0 100px;
+
+    @media screen and (max-width:992px) {
+        padding: 350px 0 100px;
+    }
+
+    @media screen and (max-width:512px) {
+        padding: 420px 0 50px;
+    }
+
+    @media screen and (max-width:332px) {
+        padding: 470px 0 50px;
+    }
 
     .col-lg-6 {
         
@@ -11,6 +23,24 @@
         &:nth-child(2) {
             h1 {
                 padding: 20px 0;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            @media screen and (max-width:767px) {
+                h1 {
+                    font-size: 30px;
+                }
+    
+                p {
+                    font-size: 15px;
+                }
+
+                span {
+                    font-size: 12px;
+                }
             }
         }
     }

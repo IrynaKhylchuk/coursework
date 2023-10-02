@@ -6,32 +6,55 @@
     background-size: cover;
     text-align: center;
 
-    @media screen and (max-width:992px) {
+    @media screen and (max-width:991px) {
         height: 1200px;
+    }
+
+    @media screen and (max-width:767px) {
+        height: 800px;
     }
 
     .container {
         padding: 50px 0 350px;
         position: relative;
 
-        div {
-            h2 {
-                margin: 40px 0;
-                color: white;
-            }
+        h2 {
+            margin: 40px 0;
+            color: white;
+        }
                 
-            .subtitle {
-                padding:  0 150px;
-                margin-bottom: 80px;
+        .subtitle {
+            padding: 0 150px 80px;
+            margin: 0;
             
-                @media screen and (max-width:1200px) {
-                    padding: 0 50px;
-                }
+            @media screen and (max-width:1199px) {
+                padding: 0 50px 40px;
+            }
+            
+            @media screen and (max-width:374px) {
+                padding: 0;
+            }
+        }
+
+        
+        @media screen and (max-width:767px) {
+            padding: 30px 0;
+
+            h2 {
+                font-size: 25px;
+                margin: 20px 0;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+
+            span {
+                font-size: 12px;
             }
         }
     }
 }
-
 
 .discount-block {
     left: 12px;
@@ -39,9 +62,30 @@
     background-color: white;
     width: 100%;
     box-shadow: 0px 15px 20px -10px #afafaf;
+    
 
     .col-lg-7 {
         padding: 35px 60px;
+
+        @media screen and (max-width:767px) {
+            padding: 15px 30px;
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h5 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .col-6 {
+                padding: 0;
+            }
+        }
 
         .row {
             &:first-child {
@@ -49,24 +93,20 @@
             }
             
             .col-6 {
-                padding: 0;
+                padding: 35px 0;
 
                 &:nth-child(1) {
                     border-right: 1px solid #e1e1e7;
                 }
 
-                .block {
-                    padding: 35px 0;
+                h1 {
+                    color: #f75e2e;
+                    text-transform: uppercase;
+                }
 
-                    h1 {
-                        color: #f75e2e;
-                        text-transform: uppercase;
-                    }
-
-                    h5 {
-                        font-family: Poppins-SemiBold;
-                        color: #0287c3;
-                    }
+                h5 {
+                    font-family: Poppins-SemiBold;
+                    color: #0287c3;
                 }
             }   
         }
@@ -76,19 +116,29 @@
         background-color: $main-color-1;
         padding: 20px;
 
+        @media screen and (max-width:425px) {
+            img {
+                display: none;
+            }
+        }
+
         &>div {
             border: 3px dashed #0287c3;
             border-radius: 30px;
             padding: 30px;
+                    
+            @media screen and (max-width:767px) {
+                padding: 15px;
+            }
 
             &>img {
                 position: absolute;
                 bottom: 20px;
                 right: -25px;
 
-                @media screen and (min-width:992px) and (max-width:1200px) {
-                    right: -20px;
-                    bottom: -60px;
+                @media screen and (max-width:1199px) {
+                    right: -10px;
+                    bottom: -100px;
                 }
             }
 
@@ -98,6 +148,11 @@
                 text-transform: uppercase;
                 font-family: Poppins-SemiBold;
                 line-height: 40px;
+                margin: 0;
+       
+                @media screen and (max-width:767px) {
+                    font-size: 19px;
+                }
             }
 
             .inside-block {
@@ -107,6 +162,10 @@
                 border: 3px dashed white;
                 padding: 30px 55px;
                 margin: 40px 0 50px;
+
+                @media screen and (max-width:1199px) {
+                    margin: 10px 0;
+                }
 
                 img {
                     position: absolute;
@@ -145,6 +204,21 @@
                         font-size: 14pt;
                         font-family: Poppins-Medium;
                     }
+                        
+                    @media screen and (max-width:767px) {
+                        &:nth-child(3) {
+                            font-size: 20px;
+                        }
+    
+                        &:nth-child(4) {
+                            font-size: 40px;
+                            line-height: 50px;
+                        }
+    
+                        &:nth-child(5) {
+                            font-size: 15px;
+                        }
+                    }
                 }
             }
 
@@ -152,6 +226,10 @@
                 font-family: OpenSans-Italic;
                 color: white;
                 font-size: 18pt;
+
+                @media screen and (max-width:767px) {
+                    font-size: 17px;
+                }
             }
         }
     }

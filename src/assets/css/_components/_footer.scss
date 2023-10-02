@@ -1,6 +1,24 @@
 .footer {
     background-color: $main-color-1;
 
+    div {
+        a {
+            .logo-sm {
+                display: none;
+            }
+
+            @media screen and (max-width:767px){
+                .logo-sm {
+                    display: inline-block;
+                } 
+
+                .logo-lg {
+                    display: none;
+                }
+            }
+        }
+    }
+
     .foot-nav {
         display: flex;
         justify-content: space-between;

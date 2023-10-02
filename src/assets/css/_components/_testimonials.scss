@@ -5,12 +5,12 @@
         padding: 250px 0 70px;
         position: relative;
 
-        @media screen and (max-width:1200px) {
-            padding: 350px 0 70px;
+        @media screen and (max-width:1199px) {
+            padding: 250px 0 70px;
         }
-
-        @media screen and (max-width:992px) {
-            padding: 370px 0 70px;
+        
+        @media screen and (max-width:523px) {
+            padding: 300px 0 70px;
         }
 
         span {
